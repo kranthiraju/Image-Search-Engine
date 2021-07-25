@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+.search
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-left: 3.5%;
+    margin-top: 2%;
+}
+.search input[type="text"]
+{
+    border: none;
+    outline: none;
+    width: 75%;
+    background: #ffffff;
+    border-radius: 0.2rem;
+    box-shadow: 0rem 0rem 0.3rem rgba(0, 0, 0, 0.5);
+    padding: 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.search button
+{
+    border: none;
+    outline: none;
+    width: 8%;
+    border-radius: 0.2rem;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    cursor: pointer;
+    box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.search button i
+{
+    font-size: 1.5rem;
+}
+.search button:active
+{
+    background: white;
+    color: black;
+}
