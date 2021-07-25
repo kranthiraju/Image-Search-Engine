@@ -21,19 +21,18 @@ export default function Images({search}) {
     }
     useEffect(()=>{
         getImages(perpage);
-    },[perpage]);
+    },[perpage])// eslint-disable-line react-hooks/exhaustive-deps
 
     useEffect(()=>{
-        setPerpage(8);
-        getImages(perpage);
-    },[search]);
+        getImages(8);
+    },[search])// eslint-disable-line react-hooks/exhaustive-deps
     return (
         <div className="images">
             <h1>{search}</h1>
             <p>{images.length} Images has been found</p>
             <div className="images_grid">
                 {images.map((image)=>(
-                    <img className="img" src={image.urls.small} key={image.id}></img>
+                    <img className="img" src={image.urls.small} key={image.id} alt={image.urls.small}></img>
                 ))}
             </div>
             <button className="load_more" onClick={handleMore}>Load More</button>
